@@ -743,3 +743,36 @@ h4 {
 .error {
     color: red;
 }
+
+
+/* /////////////////// */
+
+/* login registration css start */
+.modalStyle{
+    border: 1px solid #28aae0;
+    border-radius: 0px!important;
+}
+.labelStyle{
+    color:#28aae0;
+}
+.inputStyle{
+    border:2px solid #28aae0;
+    border-radius: 0px!important;
+    outline: none!important;
+}
+
+.inputBtn{
+    background-color: #28aae0;
+    border-radius: 0px!important;
+    outline: none;
+    transition: all 0.6s ease-in-out;
+}
+.inputBtn:hover{
+    background-color:#f69223;
+    color: white;
+}
+
+/* login registration css end */
+
+
+/* ///////////////////////// */

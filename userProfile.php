@@ -24,9 +24,11 @@ if($_GET){
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#pag1" role="tab" aria-controls="home"><i class="fa fa-first-order icon"><span class="m-2">Order</span></i></a>
         </li>
+    
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#pag2" role="tab" aria-controls="profile"><i class="fa fa-first-order icon"></i><span class="m-2">Edit profile</span></a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#pag3" role="tab" aria-controls="messages"><i class="fa fa-first-order icon"></i><span class="m-2">Change Address</span></a>
         </li>

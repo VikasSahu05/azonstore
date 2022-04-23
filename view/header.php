@@ -72,14 +72,14 @@ $id=intval($userIdArray["id"]);
             <form action="#" class="fixed-sm-top">
                 <ul>
                   <li>
-                    <input  class="form-control me-2 input_search" type="search" 
+                    <input  class="form-control me-2 input_search" type="text" 
                        placeholder="Search for products"
                       aria-label="Search" 
                     />
                   </li>
       
                     <li><button type="submit" class="search_btn"> 
-                        <i class="fa fa-search" id=" fa-search"></i></button>
+                        <i class="fa fa-search searchIcon" id=" fa-search"></i></button>
                     </li>
                 </ul>
               </form>

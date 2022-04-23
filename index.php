@@ -3,37 +3,37 @@
 
 <div class="modal fade" id="Mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content modalStyle">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Be Our Customer</h5>
+        <h5 class="modal-title labelStyle" id="exampleModalLabel">Be Our Customer</h5>
       </div>
       <div class="modal-body">
         <form id="signUpform">
         <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control" id="name" name="name" placeholder="Name">
+                <!-- <label for="name" class="form-label">Name</label> -->
+                <input type="name" class="form-control inputStyle" id="name" name="name" placeholder="Name">
                 <div id="errorname" class="error" style="color:red"></div>
             </div>
             <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input type="mobile" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                <!-- <label for="phone" class="form-label">Phone Number</label> -->
+                <input type="mobile" class="form-control inputStyle" id="phone" name="phone" placeholder="Phone Number">
                 <div id="errorphone" class="error" style="color:red"></div>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input type="email" class="form-control inputStyle" id="email" name="email" placeholder="Email Address">
                 <div id="erroremail" class="error" style="color:red"></div>
             </div>
             <div class="mb-3">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+                <!-- <label for="pass" class="form-label">Password</label> -->
+                <input type="password" class="form-control inputStyle" id="pass" name="pass" placeholder="Password">
                 <div id="errorpass" class="error" style="color:red"></div>
             </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" id="close"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button"  class="btn btn-success" onclick='submit()'>Sign Up</button>
+        <button type="button" id="close"  class="btn inputBtn" data-bs-dismiss="modal">Close</button>
+        <button type="button"  class="btn inputBtn" onclick='submit()'>Sign Up</button>
       </div>
     </div>
   </div>
@@ -41,26 +41,26 @@
 
 <!-- ----------------------------------------login  modal------------------------ -->
 <div class="modal fade" id="MyLoginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <div class="modal-dialog ">
+    <div class="modal-content modalStyle">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <h5 class="modal-title labelStyle" id="exampleModalLabel">Login</h5>
       </div>
       <div class="modal-body">
         <form id="signIpform">
             <div class="mb-3 mailDiv">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="emailLogin" name="emailLogin" placeholder="Email Address">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input type="email" class="form-control inputStyle" id="emailLogin" name="emailLogin" placeholder="Email Address">
                 <div id="erroremailLogin" class="error" style="color:red"></div>
             </div>
             <div class="mb-3 passDiv">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="passLogin" name="passLogin" placeholder="Password">
+                <!-- <label for="pass" class="form-label">Password</label> -->
+                <input type="password" class="form-control inputStyle" id="passLogin" name="passLogin" placeholder="Password">
                 <div id="errorpassLogin" class="error" style="color:red"></div>
             </div>
             <div class="mb-3 verify">
-                <label for="pass" class="form-label">Verify</label>
-                <input type="otp" class="form-control" id="otp" name="otp" placeholder="Verify OTP">
+                <!-- <label for="pass" class="form-label">Verify</label> -->
+                <input type="otp" class="form-control inputStyle" id="otp" name="otp" placeholder="Verify OTP">
                 <div id="errorOtp" class="error" style="color:red"></div>
             </div>
         </form>
@@ -68,9 +68,9 @@
         <a href="#" class="text-dark" id="signUp">sign up</a>
       </div>
       <div class="modal-footer">
-        <button type="button" id="closeLogin"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button"  class="btn btn-success submitLogin" onclick='submitLogin()'>Login</button>
-        <button type="button" id="verify"  class="btn btn-success validate">Verify</button>
+        <button type="button" id="closeLogin"  class="btn inputBtn" data-bs-dismiss="modal">Close</button>
+        <button type="button"  class="btn inputBtn submitLogin" onclick='submitLogin()'>Login</button>
+        <button type="button" id="verify"  class="btn inputBtn validate">Verify</button>
       </div>
     </div>
   </div>
