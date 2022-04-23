@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    /* --blue: rgb(40 170 224);;
+    --orange: #f69223;
+    --black: #000000; */
+    /* --box-shadow:10.0px 10px 50px var(--blue);; */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+}
+
+ul,
+li,
+a,
+a:hover {
+    /* margin:0;
+    padding:0; */
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(40 170 224);
+    /* color: #f69223; */
+    padding-bottom: 10px;
+}
+
+#women_clothing_title {
+    /* background: #000; */
+    padding-top: 20px;
+}
+
+h4 {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+@media only screen and (min-width: 992px) {
+    .d_none {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+    #women_clothing_title {
+        /* background: #000; */
+        padding-top: 10px;
+    }
+    h4 {
+        padding: 0;
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+
+/* ---------------------------------------------------- Top slider section
+-------------------------------------------------------------------------- */
+
+#myswipers {
+    width: 100%;
+    height: 70vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    height: 70vh;
+    display: block;
+}
+
+#swiper_slider .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--orange);
+}
+
+@media only screen and (max-width: 991px) {
+    .slider-container {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    #myswipers {
+        width: 100%;
+        height: 190px;
+    }
+    #swiper_slider {
+        width: 100%;
+        height: 190px;
+    }
+    #swiper_slider img {
+        object-fit: cover;
+    }
+}
+
+
+/* ---------------------------------------------------- content section
+-------------------------------------------------------------------------- */
+
+.common_section {
+    overflow: hidden;
+}
+
+.common_section,
+.offer_banner_img {
+    width: 100%;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    /* background-color: pink; */
+}
+
+.common_section .item_ .plus_width_img {
+    /* background-color: red; */
+    width: 180px;
+    height: 180px;
+}
+
+.common_section .content {
+    /* background: pink; */
+    margin: 10px 0;
+    padding-bottom: 2px;
+}
+
+.women_section .content .title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    /* background-color: red; */
+}
+
+.common_section .content .item_box,
+.men_section .content .item_box,
+.women_shoes .content .item_box,
+.budget_buys .budget_content .item_box,
+.circle_categry .circle_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    /* background: #000; */
+    /* box-shadow: var(--box-shadow) */
+}
+
+.common_section .item_ {
+    margin: 0 12px;
+    /* box-shadow:  10.0px 10px 50px var(--blue); */
+    background-color: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.common_section img {
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 100% 100% 100%;
+    padding: 5px;
+    /* background-color: red; */
+    box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.007)
+}
+
+.common_section .prices {
+    height: 35px;
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: 700;
+}
+
+.common_section .prices .fa-inr {
+    padding-left: 5px;
+    padding-right: 3px;
+    font-weight: 500;
+    color: #000;
+}
+
+@media only screen and (max-width: 991px) {
+    .common_section {
+        width: 100%;
+        height: auto;
+    }
+    .common_section .content {
+        /* background: pink; */
+        margin: 1px 0;
+        padding-bottom: 0;
+    }
+    .common_section .item_ .plus_width_img {
+        /* background-color: red; */
+        width: 100%;
+        height: 150px;
+    }
+    .common_section .content .item_box,
+    .men_section .content .item_box,
+    .women_shoes .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .circle_categry .circle_content {
+        margin-bottom: 15px;
+        /* background-color: red; */
+    }
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box {
+        width: 100%;
+        /* display: block; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+    .common_section .item_ {
+        margin: 2px;
+        padding: 0;
+        height: auto;
+        padding-bottom: 5px;
+    }
+    .common_section img,
+    .common_section .img {
+        width: 100%;
+        height: 100px;
+        border-radius: 0;
+        margin: auto;
+    }
+    .common_section .prices {
+        height: auto;
+        padding: 0;
+    }
+}
+
+
+/* ---------------------------------------------------- offer banner slider Section 
+-------------------------------------------------------------------------- */
+
+.banner_slider_>#myswipers {
+    width: 100%;
+    height: 55vh;
+    /* background-color: red; */
+}
+
+.banner_slider_>.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    height: 55vh;
+    display: block;
+}
+
+#swiper_slider .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .banner_slider_>#myswipers {
+        width: 100%;
+        height: auto;
+        /* background-color: red; */
+    }
+    .banner_slider_>.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #000;
+        height: 100%;
+        display: block;
+    }
+    #swiper_slider .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+/* ----------------------------------------------------  Women footwear Section 
+-------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------- BUDGET BUYS section
+-------------------------------------------------------------------------- */
+
+.budget_buys {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.budget_buys h1 {
+    font-size: 30px;
+    padding: 35px 0;
+    text-transform: capitalize;
+    font-style: italic;
+    /* background-color: red; */
+}
+
+.budget_buys .item_ {
+    background: #f1f1f1;
+}
+
+.budget_buys img {
+    width: 180px;
+    height: 215px;
+    padding: 10px;
+    padding-bottom: 6px;
+}
+
+@media only screen and (max-width: 991px) {
+    .budget_buys {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .budget_buys .budget_content {
+        /*  background-color: red; */
+    }
+    .budget_buys h1 {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+    .budget_buys img {
+        width: 100%;
+        height: 215px;
+        padding: 0;
+    }
+}
+
+
+/* ---------------------------------------------------- Circle section
+-------------------------------------------------------------------------- */
+
+.circle_categry .circle_content {
+    padding: 40px 100px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.circle_content .item__ {
+    width: 17%;
+    height: 30vh;
+    border-radius: 50%;
+    margin-left: 10px;
+    background: #000;
+    /* box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07),
+    10.0px 10px 50px var(--blue); */
+}
+
+.circle_content .item__ .circle_images {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+    .circle_categry .circle_content {
+        padding: 0;
+        margin: 0;
+        display: block;
+        padding-bottom: 17px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* background-color: red; */
+    }
+    .circle_content .item__ {
+        width: 70%;
+        height: 25vh;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .circle_content .item__ .circle_images {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 50%;
+        position: relative;
+    }
+}
+
+
+/* @media only screen and  (min-width: 351px) and (max-width: 551px) {
+                    .circle_categry .circle_content{
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        background-color: red;
+                    }
+                }
+
+                @media only screen and  (min-width: 551px) and (max-width: 900px) {
+                    .circle_categry .circle_content{
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        background-color: red;
+                    }
+                } */
+
+
+/* ---------------------------------------------------- offer banner image section
+-------------------------------------------------------------------------- */
+
+.offer_banner_img {
+    margin: 30px 0;
+    background: #000;
+}
+
+.offer_banner_img .bg_img {
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--orange);
+    background-image: url("../img/slide1.png")
+}
+
+
+/* ---------------------------------------------------- offer banner image section
+-------------------------------------------------------------------------- */
+
+.blog_section {
+    width: 100%;
+    height: 115vh;
+    /* background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5); */
+    /* background: linear-gradient(to right, rgb(40 170 224), #91eae4  ); */
+    padding: 0 40px;
+}
+
+.blog_section h1 {
+    font-size: 20px;
+    padding: 35px 0;
+    padding-bottom: 010px;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.blog_section .content {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    overflow: hidden;
+    /* box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1); */
+    border-radius: 1em;
+    height: auto;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* box-shadow: var(--box-shadow); */
+    margin: 0 10px;
+}
+
+.blog_section .card__image_ {
+    max-width: 100%;
+    height: 30vh;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__body {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.tag {
+    width: 90px;
+    height: 37px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 1em;
+    font-size: 12px;
+    /* background-color: red; */
+}
+
+
+/* .tag + .tag {
+    margin-left: .5em;
+  } */
+
+.tag-blue,
+.tag-brown,
+.tag-red {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, rgb(40 170 224), #56CCF2);
+    color: #fafafa;
+}
+
+.card__body h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.card__body p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.card__footer {
+    display: flex;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.user {
+    display: flex;
+    gap: .5rem;
+}
+
+.blog_section .user__image {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.user__info>small {
+    color: #666;
+}
+
+.blog_btn_links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.blog_btn {
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--blue);
+    border-radius: 5px;
+}
+
+#create_btn,
+#view_btn:hover {
+    color: #fff;
+    background-color: var(--blue);
+}
+
+#view_btn {
+    border: 1px solid var(--blue);
+}
+
+
+/* -box-shadow:10.0px 10px 50px var(--blue);; */
+
+@media only screen and (max-width: 991px) {
+    .blog_section {
+        width: 100%;
+        height: auto;
+        padding: 0 40px;
+    }
+    .blog_section .content {
+        display: block;
+        height: auto;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    .blog_btn_links {
+        margin: 70px 0;
+    }
+    .blog_btn {
+        width: 200px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: var(--blue);
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    #create_btn,
+    #view_btn:hover {
+        color: #fff;
+        background-color: var(--blue);
+    }
+    #view_btn {
+        border: 1px solid var(--blue);
+    }
+    /* -box-shadow:10.0px 10px 50px var(--blue);; */
+}
+
+
+/* ---------------------------------------------------- sproduct (shop by categry) slider section
+-------------------------------------------------------------------------- */
+
+.shop_by_categry {
+    /* background-color: BLUE!important; */
+    width: 100%;
+    height: ;
+}
+
+.shop_by_categry h1 {
+    font-size: 30px;
+    padding: 20px 0;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.mySwiper_ {
+    width: 100%;
+    height: 70vh;
+    /* background: #000; */
+    background-color: transparent;
+}
+
+.mySwiper_ .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 50vh;
+    background-color: transparent;
+    /* box-shadow: var(--box-shadow); */
+    margin: 20px 2px;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    /* background-color:red ; */
+}
+
+.swiper-slide h3 {
+    color: var(--blue);
+    font-size: 19px;
+    text-transform: capitalize;
+    padding: 15px 0px 15px;
+    background-color: #f2f2f2;
+}
+
+.seller-btn {
+    float: right;
+}
+
+@media only screen and (max-width: 991px) {
+    .mySwiper_ .swiper-slide {
+        margin: 0;
+        width: 100%;
+        /* background-color: red; */
+    }
+}
+
+@media (max-width:1200px) {
+    .bestselling_item_section {
+        /* background-color: blue; */
+        width: 100%;
+        height: 50vh;
+    }
+    .bestselling_item_section img {
+        height: 100%;
+    }
+    .bestselling_item_section h1 {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 299px) {
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .common_section .circle_categry .circle_content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .common_section .circle_categry .circle_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 650px) {
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .common_section .circle_categry .circle_content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .common_section .circle_categry .circle_content {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1025px) {
+    .common_section .content .item_box,
+    .budget_buys .budget_content .item_box,
+    .common_section .circle_categry .circle_content {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.error {
+    color: red;
+}
