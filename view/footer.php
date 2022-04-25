@@ -3,7 +3,7 @@
         <div class="footer_content">
             <div class="item"  >
                 <div class="logo">
-                    <a href="#"><img src="../fashion/img/imgg/logos.png" alt="logo" /></a>
+                    <a href="#"><img src="img/imgg/logos.png" alt="logo" /></a>
                 </div>
 
                 <div class="address">

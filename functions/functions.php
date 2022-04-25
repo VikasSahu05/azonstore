@@ -94,6 +94,8 @@ $pro_id = $row_products['product_id'];
 
 $pro_title = $row_products['product_title'];
 
+$pro_title = substr($pro_title,0,23);
+
 $pro_price = $row_products['product_price'];
 
 $pro_img1 = $row_products['product_img1'];
@@ -152,7 +154,7 @@ $product_label = "
 
 echo "
 
-<div class='col-md-4 col-sm-6 single' >
+<div class='shadow mt-5 col-md-3  col-sm-6 single' >
 
 <div class='product' >
 
@@ -164,35 +166,34 @@ echo "
 
 <div class='text' >
 
-<center>
+<center class='mt-2 mb-2'>
 
-<p class='btn btn-warning'> $manufacturer_name </p>
+<p class='btn btn-warning '> $manufacturer_name </p>
 
 </center>
 
-<hr>
+<div class='text-center'>
+<p><a href='$pro_url' style='color:#000 !important' > $pro_title... </a></p>
 
-<h5><a href='$pro_url' style='color:#000 !important' >$pro_title</a></h5>
-
-<p class='price' > $product_price $product_psp_price </p>
+<p class='price'> $product_price $product_psp_price </p>
 
 <p class='buttons' >
 
-<a href='$pro_url' class='btn btn-default' >View Details</a>
+<a href='$pro_url' class='btn btn-sm shadow' >View Details</a>
 
-<a href='$pro_url' value='$pro_id' class='btn btn-danger'>
+<a href='$pro_url' value='$pro_id' class='btn shadow btn-sm'>
 
 <i class='fa fa-shopping-cart'></i> Add To Cart
 
 </a>
 
-
 </p>
 
 </div>
 
-$product_label
+</div>
 
+$product_label
 
 </div>
 

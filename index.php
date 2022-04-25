@@ -128,13 +128,13 @@
     getPro();
 
     ?>
-    </div>
-    </section>
+</div>
+</section>
 
     
  <!-- ------------------------------------------------- men clothing Section 
 ------------------------------------------------------------------------------------>    
-    <section class="">
+    <section class="mt-5">
         <div class="common_section men_section">
            
 
@@ -663,21 +663,21 @@
         <div class="swiper-wrapper ">
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/kurta.jpeg" >
+                    <img  class="" src="img/imgg/kurta.jpeg" >
                     <h3 class="">indian wear</h3>
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/tshirt_m.png" >
+                    <img  class="" src="img/imgg/tshirt_m.png" >
                     <h3 class="">casual wear</h3>
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/men_kurta.jpeg" >
+                    <img  class="" src="img/imgg/men_kurta.jpeg" >
                     
                     <h3 class="">kurta</h3>
                 </a>
@@ -685,21 +685,21 @@
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/dress.png" >
+                    <img  class="" src="img/imgg/dress.png" >
                     <h3 class="">western wear</h3>
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/tshir-tm.png" >
+                    <img  class="" src="img/imgg/tshir-tm.png" >
                     <h3 class="">Active wear</h3>
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img  class="" src="../fashion/img/imgg/25(1).png" >
+                    <img  class="" src="img/imgg/25(1).png" >
                     <h3 class="">sports wear</h3>
                 </a>
             </div>
@@ -1022,38 +1022,38 @@
         <div class="swiper-wrapper ">
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/kurta.jpeg" >
+                    <img src="img/imgg/kurta.jpeg" >
                                    </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/tshirt_m.png" >
+                    <img src="img/imgg/tshirt_m.png" >
                                    </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/men_kurta.jpeg" >
+                    <img src="img/imgg/men_kurta.jpeg" >
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/dress.png" >
+                    <img src="img/imgg/dress.png" >
                    
                 </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/tshir-tm.png" >
+                    <img src="img/imgg/tshir-tm.png" >
                                    </a>
             </div>
 
             <div class="swiper-slide">
                 <a href="https://www.youtube.com/">
-                    <img src="../fashion/img/imgg/25(1).png" >
+                    <img src="img/imgg/25(1).png" >
                                    </a>
             </div>
 
@@ -1106,7 +1106,7 @@
 
             <div class="card">
                 <div class="card__header">
-                <img src="../fashion/img/imgg/indian_wear.jpeg" alt="card__image" class="card__image_" width="600">
+                <img src="img/imgg/indian_wear.jpeg" alt="card__image" class="card__image_" width="600">
                 </div>
                 <div class="card__body">
                 <span class="tag tag-brown">Fashion</span>
@@ -1115,7 +1115,7 @@
                 </div>
                 <div class="card__footer">
                 <div class="user">
-                    <img src="../fashion/img/imgg/18.png" class="user__image">
+                    <img src="img/imgg/18.png" class="user__image">
                     <div class="user__info">
                         <h5>Jony Doe</h5>
                         <small>Yesterday</small>
@@ -1126,7 +1126,7 @@
 
             <div class="card">
                 <div class="card__header">
-                <img src="../fashion/img/imgg/18.png" alt="card__image" class="card__image_" width="600">
+                <img src="img/imgg/18.png" alt="card__image" class="card__image_" width="600">
                 </div>
                 <div class="card__body">
                 <span class="tag tag-brown">Food</span>
@@ -1135,7 +1135,7 @@
                 </div>
                 <div class="card__footer">
                 <div class="user">
-                    <img src="../fashion/img/imgg/18.png" class="user__image">
+                    <img src="img/imgg/18.png" class="user__image">
                     <div class="user__info">
                     <h5>Jony Doe</h5>
                     <small>Yesterday</small>
@@ -1157,7 +1157,7 @@
                 
                 <div class="card__footer">
                     <div class="user">
-                        <img src="../fashion/img/imgg/18.png" class="user__image">
+                        <img src="img/imgg/18.png" class="user__image">
                         <div class="user__info">
                         <h5>John Doe</h5>
                         <small>2d ago</small>

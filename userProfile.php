@@ -10,159 +10,243 @@ if($_GET){
     
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .navSlide{
+    height: 100%;
+    width: 0;
+    position: relative;
+    /* z-index: 1; */
+    top: 0%;
+    left: 0;
+    background-color: #28aae0;
+    /* opacity: .9; */
+    overflow-x: hidden;
+    padding-top: 50px;
+  }
+
+  .navSlide a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ccc;
+  }
+  .navSlide a:hover{
+    transition: 0.4s;
+    color: #fff;
+  }
+
+  .navSlide .close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#000;
+  }
+
+  .openIconSide{
+    color: #000;
+    font-size: 36px;
+    /* margin-left:130px; */
+  }
+
+  #NavSlideContent{
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    /* display:flex;
+    flex-direction:row; */
+  }
+
+  @media screen and (max-width:768px) {
+    .navSlide{
+    width: 120px;
+    margin-left: -57px;
+    text-align: left;
+    padding-left: 10px;
+  }    
+  }
+  
+</style>
+
+<script>
+
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '120px';
+    document.getElementById('NavSlideContent').style.marginLeft = '0px';
+  }
+  function closeSideMenu(){
+    document.getElementById('menu').style.width = '0px';
+    document.getElementById('NavSlideContent').style.marginLeft = '0px';
+  }
+
+</script>
 </head>
 <body>
-    <div class="container">
-    <div class="vertical-tabs">
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#pag1" role="tab" aria-controls="home"><i class="fa fa-first-order icon"><span class="m-2">Order</span></i></a>
-        </li>
-    
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag2" role="tab" aria-controls="profile"><i class="fa fa-first-order icon"></i><span class="m-2">Edit profile</span></a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag3" role="tab" aria-controls="messages"><i class="fa fa-first-order icon"></i><span class="m-2">Change Address</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag4" role="tab" aria-controls="settings"><i class="fa fa-trophy icon" aria-hidden="true"></i><span class="m-2">Rewards</span></a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag5" role="tab" aria-controls="settings"><i class="fa fa-heart icon" aria-hidden="true"></i><span class="m-2">Wishlis</span></a>
-        </li>
+<div class="container">
+<div id="NavSlideContent">
+    <div class="d-flex flex-row">
+    <div class="col-lg-2 w-25">
+        <!-- <span class="slideBaar">
+            <a class="openIconSide"  href="#" onclick="openSlideMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </span> -->
 
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag6" role="tab" aria-controls="settings">about</a>
-        </li>
+        <div id="menu" class="navSlide">
+        <a href="#" class="close" onclick="closeSideMenu()">
+        <i class="fa fa-times" aria-hidden="true"></i>
 
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#pag7" role="tab" aria-controls="settings">Support</a>
-        </li>
-      </ul>
-
-      <div class="tab-content">
-        <div class="tab-pane active" id="pag1" role="tabpanel">
-          <div class="sv-tab-panel">
-            <h3>TAB 1</h3>
-            <p>CONTEUDO 1</p>
-          </div>
-        </div>
-        <div class="tab-pane" id="pag2" role="tabpanel">
-          <div class="sv-tab-panel">
-            <form id="signUpform">
-                    <div class="row">
-                        <div class="ml-2">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="hidden" class="hidden1" id="hidden1" name="hidden1" value="<?=$userDataArray["id"]?>">
-                            <input type="name" class="form-control editUser" id="updateName" name="updateName" placeholder="Name" value="<?=$userDataArray["name"]?>">
-                            <div id="errorname" class="error mt-2" style="color:red"></div>
-                        </div>
-                        <div class="ml-2">                        
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="mobile" class="form-control editUser" id="updatePhone" name="updatePhone" placeholder="Phone Number" value="<?=$userDataArray["phone"]?>">
-                            <div id="errorphone" class="error mt-2" style="color:red"></div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="ml-2">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control editUser" id="updateEmail" name="updateEmail" placeholder="Email Address" value="<?=$userDataArray["email"]?>">
-                            <div id="erroremail" class="error mt-2" style="color:red"></div>
-                        </div>
-                        <div class="ml-2">
-                            <label for="pass" class="form-label">Password</label>
-                            <input type="password" class="form-control editUser" id="updatePass" name="updatePass" placeholder="Password" value="<?=$userDataArray["pass"]?>">
-                            <div id="errorpass" class="error mt-2" style="color:red"></div>
-                        </div>
-                    </div>
-            </form>
-            <button type="button"  class="btn btn-success mt-4" onclick='update()'>Update Profile</button>
-          </div>
-        </div>
-        <div class="tab-pane" id="pag3" role="tabpanel">
-          <div class="sv-tab-panel">
-                <form>
-                    <div class="mb-3">
-
-                        <label for="pass" class="form-label">Address</label>
-                        <input type="hidden" class="hidden" id="hidden" name="hidden" value="<?=$userDataArray["id"]?>">
-                        <input type="address" class="form-control" id="updateAddress" name="updateAddress" placeholder="Address" value="<?=$userDataArray["user_address"]?>">
-                        <div id="errorAddress" class="error mt-2" style="color:red"></div>
-                    </div>
-                    <div class="row">
-                        <div class="ml-2">
-                            <label for="pass" class="form-label">City</label>
-                            <input type="City" class="form-control editUser" id="updateCity" name="updateCity" placeholder="City" value="<?=$userDataArray["user_city"]?>">
-                            <div id="errorCity" class="error mt-2" style="color:red"></div>
-                        </div>
-                        <div class="ml-2">
-                            <label for="pass" class="form-label">Pin Code</label>
-                            <input type="pin" class="form-control editUser" id="updatePin" name="updatePin" placeholder="Pincode" value="<?=$userDataArray["user_pincode"]?>">
-                            <div id="errorPin" class="error mt-2" style="color:red"></div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                    <div class="ml-2">
-                        <label for="pass" class="form-label">State</label>
-                        <input type="state" class="form-control editUser" id="updateState" name="updateState" placeholder="State" value="<?=$userDataArray["user_state"]?>">
-                        <div id="errorState" class="error mt-2" style="color:red"></div>
-                    </div>
-                    <div class="ml-2">
-                        <label for="pass" class="form-label">Country</label>
-                        <input type="country" class="form-control editUser" id="updateCountry" name="updateCountry" placeholder="Country" value="<?=$userDataArray["user_country"]?>">
-                        <div id="errorCountry" class="error" style="color:red"></div>
-                    </div>
-
-                    </div>
-                </form>
-                <button type="button"  class="btn btn-success mt-4" onclick='updateAddress()'>Update Address</button>
-          </div>
-        </div>
-        <div class="tab-pane" id="pag4" role="tabpanel">
-          <div class="sv-tab-panel">
-           <h3>TAB 4</h3>
-            <p>CONTEUDO 4</p>
-          </div>
-        </div>
-
-        <div class="tab-pane" id="pag5" role="tabpanel">
-          <div class="sv-tab-panel">
-            <h3>TAB 5</h3>
-            <p>CONTEUDO 5</p>
-          </div>
-        </div>
-
-        <div class="tab-pane" id="pag6" role="tabpanel">
-          <div class="sv-tab-panel">
-            <h3>TAB 6</h3>
-            <p>CONTEUDO 6</p>
-          </div>
-        </div>
-
-        <div class="tab-pane" id="pag7" role="tabpanel">
-          <div class="sv-tab-panel">
-            <h3>TAB 7</h3>
-            <p>CONTEUDO 7</p>
-          </div>
-        </div>
-
+        </a>
+        <a href="#" id="firstTab" class="tablinks firstTab commonTab active">Order</a>
+        <a href="#" id="secondTab" class="tablinks secondTab commonTab inActive" >Profile</a>
+        <a href="#" id="thirdTab" class="tablinks thirdTab commonTab inActive">Address</a>
+        <a href="#" id="fourthTab" class="tablinks fourthTab commonTab inActive" >Reward</a>
+        <a href="#" id="fiveTab" class="tablinks fiveTab commonTab inActive ">About</a>
+        <a href="#" id="sixTab" class="tablinks sixTab commonTab inActive" >Contact</a>
       </div>
     </div>
+    <div class="col-lg-10 w-75">
+        <div class="mb-2">
+        <span class="slideBaar">
+            <a class="openIconSide"  href="#" onclick="openSlideMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </span>
+        </div>   
+    
+      <section id="firstTab" class="firstTabContent commonTabContent">
+        <div id="order" class="tabcontent">
+            <h3>Order</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt voluptatum tempora.</p>
+        </div>
+      </section>
+      
+      <section id="secondTab" class="secondTabContent commonTabContent">
+        <div id="profile" class="tabcontent">
+            <h3>Profile</h3>
+            <div class="mb-5">
+                <form id="signUpform">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="hidden" class="hidden1" id="hidden1" name="hidden1" value="<?=$userDataArray["id"]?>">
+                                <input type="name" class="form-control " id="updateName" name="updateName" placeholder="Name" value="<?=$userDataArray["name"]?>">
+                                <div id="errorname" class="error mt-2" style="color:red"></div>
+                            </div>
+                            <div class="mb-3">                        
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="mobile" class="form-control w-100" id="updatePhone" name="updatePhone" placeholder="Phone Number" value="<?=$userDataArray["phone"]?>">
+                                <div id="errorphone" class="error mt-2" style="color:red"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control w-100" id="updateEmail" name="updateEmail" placeholder="Email Address" value="<?=$userDataArray["email"]?>">
+                                <div id="erroremail" class="error mt-2" style="color:red"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass" class="form-label">Password</label>
+                                <input type="password" class="form-control w-100" id="updatePass" name="updatePass" placeholder="Password" value="<?=$userDataArray["pass"]?>">
+                                <div id="errorpass" class="error mt-2" style="color:red"></div>
+                            </div>
+                </form>
+                <button type="button"  class="btn btn-success mt-4" onclick='update()'>Update Profile</button>
+            </div>
+        </div>
+      </section>
+      
+      <section id="thirdTab" class="thirdTabContent commonTabContent">
+        <div id="address" class="tabcontent">
+            <h3>Adress</h3>
+            <div class="">
+                    <form>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Address</label>
+                            <input type="hidden" class="hidden" id="hidden" name="hidden" value="<?=$userDataArray["id"]?>">
+                            <input type="address" class="form-control" id="updateAddress" name="updateAddress" placeholder="Address" value="<?=$userDataArray["user_address"]?>">
+                            <div id="errorAddress" class="error mt-2" style="color:red"></div>
+                        </div>
+                            <div class="mb-3">
+                                <label for="pass" class="form-label">City</label>
+                                <input type="City" class="form-control w-100" id="updateCity" name="updateCity" placeholder="City" value="<?=$userDataArray["user_city"]?>">
+                                <div id="errorCity" class="error mt-2" style="color:red"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass" class="form-label">Pin Code</label>
+                                <input type="pin" class="form-control w-100" id="updatePin" name="updatePin" placeholder="Pincode" value="<?=$userDataArray["user_pincode"]?>">
+                                <div id="errorPin" class="error mt-2" style="color:red"></div>
+                            </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">State</label>
+                            <input type="state" class="form-control w-100" id="updateState" name="updateState" placeholder="State" value="<?=$userDataArray["user_state"]?>">
+                            <div id="errorState" class="error mt-2" style="color:red"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Country</label>
+                            <input type="country" class="form-control w-100" id="updateCountry" name="updateCountry" placeholder="Country" value="<?=$userDataArray["user_country"]?>">
+                            <div id="errorCountry" class="error" style="color:red"></div>
+                        </div>
+                    </form>
+                    <button type="button"  class="btn btn-success mt-4" onclick='updateAddress()'>Update Address</button>
+            </div>
+        </div>
+      </section>
+
+      <section id="fourthTab" class="fourthTabContent commonTabContent">
+        <div id="reward" class="tabcontent">
+            <h3>Reward</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis omnis unde porro repellendus, neque magni.</p>
+        </div>
+      </section>
+
+      <section id="fiveTab" class="fiveTabContent commonTabContent">
+        <div id="about" class="tabcontent">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla maiores deleniti esse, dolorum corrupti totam?</p>
+        </div>
+      </section>
+
+      <section id="sixTab" class="sixTabContent commonTabContent">
+        <div id="contact" class="tabcontent">
+            <h3>Content</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quod, dolorum ut iste ullam ipsa error. Sint, ea!</p>
+        </div>
+      </section>
+      </div>
     </div>
+  </div>
+</div>
 </body>
 </html> 
 
 
 <script>
+
+//side tab script start
+$(document).ready(function () {
+                $(".commonTabContent").hide();
+                $(".firstTabContent").show();
+                $(".commonTab").click(function () {
+                    var id = $(this).attr("id");
+                    $(".commonTab").removeClass("inActive");
+                    $(".commonTab").removeClass("active");
+                    $(".commonTab").addClass("inActive");
+                    $(this).addClass("active");
+                    $(this).removeClass("inActive");
+                    $(".commonTabContent").hide();
+                    // $(".inActive").css('color','#4cbec9');
+                    // $(".active").css({ 'color': '#4cbec9','text-decoration':'underline'});
+                    // $(".inActive").css({ color: "#000000",'background-color':'#ffff','text-decoration':'none'});
+                    $("." + id + "Content").show();
+                });
+            });
+// side tab script end
+
     (function($) {
 
 "use strict";
@@ -402,90 +486,3 @@ function updateAddress(){
 }
 </script>
 <?php include("view/footer.php"); ?>
-
-<!-- <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar" class="active">
-        <div class="custom-menu">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Toggle Menu</span>
-            </button>
-        </div>
-        <div class="p-4">
-            <ul class="list-unstyled components mb-5">
-                <li>
-                    <a id="editProfile"><span class="fa fa-user mr-3"></span> Edit Profile</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div id="content" class="p-4 p-md-5 pt-5">
-        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Profile Data</h5>
-      </div>
-      <div class="modal-body">
-        <form id="signUpform">
-        <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="hidden" class="hidden" id="hidden" name="hidden" value="<?=$userDataArray["id"]?>">
-                <input type="name" class="form-control" id="updateName" name="updateName" placeholder="Name" value="<?=$userDataArray["name"]?>">
-                <div id="errorname" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input type="mobile" class="form-control" id="updatePhone" name="updatePhone" placeholder="Phone Number" value="<?=$userDataArray["phone"]?>">
-                <div id="errorphone" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="updateEmail" name="updateEmail" placeholder="Email Address" value="<?=$userDataArray["email"]?>">
-                <div id="erroremail" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="updatePass" name="updatePass" placeholder="Password" value="<?=$userDataArray["pass"]?>">
-                <div id="errorpass" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">Address</label>
-                <input type="address" class="form-control" id="updateAddress" name="updateAddress" placeholder="Address" value="<?=$userDataArray["user_address"]?>">
-                <div id="errorAddress" class="error" style="color:red"></div>
-            </div>
-            <div class="row justify-content-around">
-            <div class="mb-3">
-                <label for="pass" class="form-label">City</label>
-                <input type="City" class="form-control" id="updateCity" name="updateCity" placeholder="City" value="<?=$userDataArray["user_city"]?>">
-                <div id="errorCity" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">Pin Code</label>
-                <input type="pin" class="form-control" id="updatePin" name="updatePin" placeholder="Pincode" value="<?=$userDataArray["user_pincode"]?>">
-                <div id="errorPin" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">State</label>
-                <input type="state" class="form-control" id="updateState" name="updateState" placeholder="State" value="<?=$userDataArray["user_state"]?>">
-                <div id="errorState" class="error" style="color:red"></div>
-            </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">Country</label>
-                <input type="country" class="form-control" id="updateCountry" name="updateCountry" placeholder="Country" value="<?=$userDataArray["user_country"]?>">
-                <div id="errorCountry" class="error" style="color:red"></div>
-            </div>
-
-            </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" id="close"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button"  class="btn btn-success" onclick='update()'>Update Profile</button>
-      </div>
-    </div>
-  </div>
-</div>
-        
-    </div>
-</div> -->

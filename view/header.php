@@ -65,7 +65,7 @@ $id=intval($userIdArray["id"]);
 <div class="header-main">
       <div class="headet_top">
         <div class="logo">
-          <a href="index.php"><img src="../fashion/img/imgg/logos.png" alt="logo" /></a>
+          <a href="index.php"><img src="img/imgg/logos.png" alt="logo" /></a>
         </div>
 
         <div class="search_box fixed-sm-top">
