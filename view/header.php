@@ -54,6 +54,80 @@ $id=intval($userIdArray["id"]);
     <link rel="stylesheet" href="./css/product_slider.css">
     <link rel="stylesheet" href="./css/product_page.css">
        
+    <style>
+  .navSlide{
+    height: 100%;
+    width:0;
+    position: relative;
+    z-index: 999;
+    top: -2%;
+    left: 0;
+    background-color: #28aae0;
+    opacity: .9;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    padding-top: 35px;
+  }
+
+  .navSlide a{ 
+    display:block;
+    text-align:center;
+    font-size: 15px;
+    padding:-50px;
+    text-decoration: none;
+    color: #ccc;
+  }
+  .navSlide a:hover{
+    transition: 0.4s;
+    color: #fff;
+  }
+
+  .navSlide .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#000;
+  }
+
+  .openIconSide{
+    color: #000;
+    font-size: 36px;
+    /* margin-left:130px; */
+  }
+
+  /* #NavSlideContent{
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    display:flex;
+    flex-direction:row;
+  } */
+
+  /* @media screen and (max-width:768px) {
+    .navSlide{
+    width: 120px;
+    margin-left: -57px;
+    text-align: left;
+    padding-left: 10px;
+  }    
+  } */
+  
+</style>
+
+<script>
+
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '150px';
+    document.getElementById('NavSlideContent').style.marginLeft = '0px';
+  }
+  function closeSideMenu(){
+    document.getElementById('menu').style.width = '0px';
+    document.getElementById('NavSlideContent').style.marginLeft = '0px';
+  }
+
+</script>
     
 
 
@@ -122,7 +196,7 @@ $id=intval($userIdArray["id"]);
                             {
                             ?>
                             <ul>
-                                <li class="item "><a href="userProfile.php?id=<?=$id?>"> <i class="fa fa-user-circle-o icon" aria-hidden="true"></i>My Profile</a></li>
+                                <li class="item"><a href="userProfile.php?id=<?=$id?>"> <i class="fa fa-user-circle-o icon" aria-hidden="true"></i>My Profile</a></li>
                                 <li class="item"><a href="order.php?id=<?=$id?>"><i class="fa fa-first-order icon" aria-hidden="true"></i>Orders</a></li>
                                 <li class="item"><a href="userWishlist.php?id=<?=$id?>"><i class="fa fa-heart icon" aria-hidden="true"></i>Wishlist</a></li>
                                 <li class="item"><a href="userReward.php?id=<?=$id?>"><i class="fa fa-trophy icon" aria-hidden="true"></i>Rewards</a></li>
@@ -200,13 +274,44 @@ $id=intval($userIdArray["id"]);
     <!-- ================== menu css started ============================ -->
     <!-- header start -->
     <header class="header fixed-top">
-        <div class="container-fluide">
-            <div class="wrapper">
+        <div class="container-fluid">
+            <div class="">
                 <div class="bar_icone">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
                 <div class="menu-overlay"></div>
-                <nav class="menu">
+                <div class="d-flex flex-row">
+                <!-- <div class="d-flex flex-row"> -->
+                        <div class="d-none d-lg-block">
+                            <span class="slideBaar">
+                                <a class="openIconSide"  href="#" onclick="openSlideMenu()">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </span>
+
+                            <div id="menu" class="navSlide">
+                            <a href="#" class="close" onclick="closeSideMenu()">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+
+                            </a>
+                            <div class="text-center">
+                                <h4><strong class="text-uppercase text-white">Trending</strong></h4>
+                                <a href="#" id="firstTab">Best Sellers</a>
+                                <a href="#" id="secondTab">New Arrivals</a>
+                            </div>
+                            <div class="text-center">
+                                <h4><strong class="text-uppercase text-white">Programs & Features </strong></h4>
+                                <a href="#" id="thirdTab">Gift Card</a>
+                            </div>
+                            <div class="text-center">
+                                <h4><strong class="text-uppercase text-white">More</strong></h4>
+                                <a href="#" id="fourthTab">Our Blog</a>
+                                <a href="#" id="fiveTab">About</a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                <nav class="menu container text-center">
                     <div class="close-icons">
                         <div class="back">
                             <i class="fa fa-angle-left"></i>
@@ -215,8 +320,12 @@ $id=intval($userIdArray["id"]);
                         <div class="menu-close">&times;</div>
                     </div>
                     <ul class="mega_menu">
+                    
+                    <li>
+                    
+                    </li>
 
-                      <li class="menu-item-children">
+                      <!-- <li class="menu-item-children">
                         <a href="#">All categry<i class="fa fa-angle-down" id="angle_down" aria-hidden="true"></i></a>
                         <div class="text-center sub-menu mega-menu mega-menu-col-4 fashion-mega-menu-col-4 ">
                             <div class="list-item first-list-item">
@@ -272,7 +381,7 @@ $id=intval($userIdArray["id"]);
                                 </ul>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
 
 
 
@@ -416,6 +525,7 @@ $id=intval($userIdArray["id"]);
 
                     </ul>
                 </nav>
+                <!-- </div> -->
 
             </div>
         </div>
