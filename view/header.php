@@ -218,13 +218,13 @@ $id=intval($userIdArray["id"]);
 
                       <li class="menu-item-children">
                         <a href="#">All categry<i class="fa fa-angle-down" id="angle_down" aria-hidden="true"></i></a>
-                        <div class="sub-menu mega-menu mega-menu-col-4 ">
+                        <div class="text-center sub-menu mega-menu mega-menu-col-4 fashion-mega-menu-col-4 ">
                             <div class="list-item first-list-item">
-                                <h3 class="title"> categry </h3>
+                                <h3 class="title">categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
@@ -233,9 +233,9 @@ $id=intval($userIdArray["id"]);
                             <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
@@ -244,25 +244,14 @@ $id=intval($userIdArray["id"]);
                              <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
                             </div>
-                            <div class="list-item middle-list-item">
-                                <h3 class="title">categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenut</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                </ul>
-                            </div>
-                            <!-- <div class="list-item last-list-item">
+                            <div class="list-item first-list-item">
                                 <h3 class="title">categry </h3>
                                 <ul>
                                     <li><a href="#">submenu</a></li>
@@ -271,18 +260,17 @@ $id=intval($userIdArray["id"]);
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
-                            </div> -->
-                            <!-- <div class="list-item middle-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
+                            </div>
+                            <div class="list-item first-list-item">
+                                <h3 class="title">categry </h3>
                                 <ul>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                 </ul>
-
-                            </div> -->
-
+                            </div>
                         </div>
                     </li>
 
@@ -296,13 +284,13 @@ $id=intval($userIdArray["id"]);
 
                     <li class="menu-item-children" id="menu-item-children">
                         <a href="#">Fashion<i class="fa fa-angle-down" id="angle_down" aria-hidden="true"></i></a>
-                        <div class="sub-menu mega-menu mega-menu-col-4 fashion-mega-menu-col-4 ">
+                        <div class="text-center sub-menu mega-menu mega-menu-col-4 fashion-mega-menu-col-4 ">
                             <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
@@ -311,9 +299,9 @@ $id=intval($userIdArray["id"]);
                             <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
@@ -322,20 +310,10 @@ $id=intval($userIdArray["id"]);
                              <div class="list-item  first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                </ul>
-                            </div>
-                            <div class="list-item first-list-item">
-                                <h3 class="title">categry </h3>
-                                <ul>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenut</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
                             </div>
@@ -349,13 +327,23 @@ $id=intval($userIdArray["id"]);
                                     <li><a href="#">submenu</a></li>
                                 </ul>
                             </div>
+                            <div class="list-item first-list-item">
+                                <h3 class="title">categry </h3>
+                                <ul>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                </ul>
+                            </div>
                             <div class="list-item first-list-item" id="list-item-margin">
                                 <h3 class="title"> categry </h3>
                                 <ul>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
+                                    <li><a href="#">submenu</a></li>
                                 </ul>
 
                             </div>
@@ -366,7 +354,7 @@ $id=intval($userIdArray["id"]);
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
+                                    <li><a href="#">submenu</a></li>
                                 </ul>
 
                             </div>
@@ -377,28 +365,17 @@ $id=intval($userIdArray["id"]);
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
-                                </ul>
-
-                            </div>
-
-                            <div class="list-item first-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
-                                <ul>
                                     <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
                                 </ul>
 
                             </div>
 
                             <div class="list-item  first-list-item">
                                 <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                <ul >
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
@@ -408,71 +385,13 @@ $id=intval($userIdArray["id"]);
                             <div class="list-item  first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                     <li><a href="#">submenu</a></li>
                                 </ul>
-                            </div>
-
-                            <div class="list-item first-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
-                                </ul>
-
-                            </div>
-
-
-                            <div class="list-item  first-list-item">
-                                <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu1</a></li>
-                                    <li><a href="#">submenu2</a></li>
-                                    <li><a href="#">submenu3</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="list-item first-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
-                                </ul>
-
-                            </div>
-                            
-                            <div class="list-item first-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
-                                </ul>
-
-                            </div>
-
-                            <div class="list-item first-list-item" id="list-item-margin">
-                                <h3 class="title"> categry </h3>
-                                <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenug</a></li>
-                                </ul>
-
-                            </div>
-                            
-                            
+                            </div>                            
                         </div>
                     </li>
 

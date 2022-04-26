@@ -99,17 +99,9 @@
               </form>
         </div>
         </div>
-
         <hr>
-
-        <p id="reserved">@</p>
+        <p id="reserved">Copyright All Reserved 2022</p>
     </footer>
-
-
-
-
-    
-   
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script> -->
 
     <!-- jquery cdn link -->
