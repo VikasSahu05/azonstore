@@ -1,7 +1,7 @@
 .picZoomer{
 	position: relative;
-    /*margin-left: 40px;
-    padding: 15px;*/
+    /* margin-left: 40px; */
+    /* padding: 15px; */
 }
 .picZoomer-pic-wp{
 	position: relative;
@@ -27,7 +27,8 @@
 	overflow: hidden;
     border:1px solid #eee;
     height: 460px;
-    margin-top: -19px;
+    margin-top: 0px;
+    margin-left: 70px;
 }
 .picZoomer-cursor{
 	display: none;
@@ -94,6 +95,7 @@ section {
     display: inline-block;
     vertical-align: top;
     margin-top: 0px;
+    height: 100%;
 }
 ._boxzoom .zoom-thumb ul.piclist {
     padding-left: 0px;
@@ -102,6 +104,7 @@ section {
 ._boxzoom ._product-images {
     width: 80%;
     display: inline-block;
+
 }
 ._boxzoom ._product-images .picZoomer {
     width: 100%;
@@ -113,8 +116,9 @@ section {
     width: 100%;
 }
 .piclist li img {
-    height:100px;
+    /* height:100px; */
     object-fit:cover;
+    height: 100%;
 }
 
 /*======products-details=====*/
@@ -122,6 +126,9 @@ section {
     background: #fff;
     padding: 15px;
     border: 1px solid lightgray;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 ._product-detail-content p._p-name {
     color: black;
@@ -141,7 +148,7 @@ section {
     margin-right: 15px;
     font-weight: 500;
 }
-._p-qty .value-button {
+.value-button {
     display: inline-flex;
     border: 0px solid #ddd;
     margin: 0px;
@@ -159,20 +166,20 @@ section {
     color: #fff;
 }
 
-._p-qty .value-button {
+.value-button {
     border: 0px solid #fe0000;
-    height: 35px;
+    /* height: 35px; */
     font-size: 20px;
     font-weight: bold;
 }
-._p-qty input#number {
+#number {
     text-align: center;
     border: none;
     border-top: 1px solid #fe0000;
     border-bottom: 1px solid #fe0000;
     margin: 0px;
     width: 50px;
-    height: 35px;
+    height: 33px;
     font-size: 14px;
     box-sizing: border-box;
 }
@@ -271,6 +278,10 @@ section {
     position: relative;
     top: 3px;
     left: -5px;
+}
+.value-button{
+    background-color: #fd7f34;
+    padding: 10px;
 }
 /*========box========*/
 .sq_box {

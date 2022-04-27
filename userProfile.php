@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="css/sidebar.css">
-<?php include("view/header.php");
+<!-- <link rel="stylesheet" href="css/sidebar.css"> -->
+<?php 
+include("view/header.php");
 if($_GET){
     intval($_GET["id"]);
     $id=$conn -> real_escape_string($_GET["id"]);
@@ -10,112 +11,35 @@ if($_GET){
     
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  .navSlide{
-    height: 100%;
-    width: 0;
-    position: relative;
-    /* z-index: 1; */
-    top: 0%;
-    left: 0;
-    background-color: #28aae0;
-    /* opacity: .9; */
-    overflow-x: hidden;
-    padding-top: 50px;
-  }
 
-  .navSlide a{
-    display: block;
-    padding: 15px 20px;
-    font-size: 15px;
-    text-decoration: none;
-    color: #ccc;
-  }
-  .navSlide a:hover{
-    transition: 0.4s;
-    color: #fff;
-  }
-
-  .navSlide .close{
-    position: absolute;
-    top: 0;
-    right: 0px;
-    margin-left: 50px;
-    font-size: 30px;
-    color:#000;
-  }
-
-  .openIconSide{
-    color: #000;
-    font-size: 36px;
-    /* margin-left:130px; */
-  }
-
-  #NavSlideContent{
-    padding: 20px;
-    transition: margin-left 0.7s;
-    overflow: hidden;
-    /* display:flex;
-    flex-direction:row; */
-  }
-
-  @media screen and (max-width:768px) {
-    .navSlide{
-    width: 120px;
-    margin-left: -57px;
-    text-align: left;
-    padding-left: 10px;
-  }    
-  }
-  
-</style>
-
-<script>
-
-  function openSlideMenu(){
-    document.getElementById('menu').style.width = '120px';
-    document.getElementById('NavSlideContent').style.marginLeft = '0px';
-  }
-  function closeSideMenu(){
-    document.getElementById('menu').style.width = '0px';
-    document.getElementById('NavSlideContent').style.marginLeft = '0px';
-  }
-
-</script>
-</head>
 <body>
 
 <div class="container">
-<div id="NavSlideContent">
+<div id="navSlideProfileContent">
     <div class="d-flex flex-row">
     <div class="col-lg-2 w-25">
         <!-- <span class="slideBaar">
-            <a class="openIconSide"  href="#" onclick="openSlideMenu()">
+            <a class="openIconSideProfile"  href="#" onclick="openSlideMenuProfile()">
             <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
         </span> -->
 
-        <div id="menu" class="navSlide">
-        <a href="#" class="close" onclick="closeSideMenu()">
-        <i class="fa fa-times" aria-hidden="true"></i>
-
-        </a>
-        <a href="#" id="firstTab" class="tablinks firstTab commonTab active">Order</a>
-        <a href="#" id="secondTab" class="tablinks secondTab commonTab inActive" >Profile</a>
-        <a href="#" id="thirdTab" class="tablinks thirdTab commonTab inActive">Address</a>
-        <a href="#" id="fourthTab" class="tablinks fourthTab commonTab inActive" >Reward</a>
-        <a href="#" id="fiveTab" class="tablinks fiveTab commonTab inActive ">About</a>
-        <a href="#" id="sixTab" class="tablinks sixTab commonTab inActive" >Contact</a>
+        <div id="menuProfile" class="navSlideProfile">
+            <a href="#" class="closeTab" onclick="closeSideMenuProfile()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="firstTab" class="tablinks firstTab commonTab active">Order</a>
+            <a href="#" id="secondTab" class="tablinks secondTab commonTab inActive" >Profile</a>
+            <a href="#" id="thirdTab" class="tablinks thirdTab commonTab inActive">Address</a>
+            <a href="#" id="fourthTab" class="tablinks fourthTab commonTab inActive" >Reward</a>
+            <a href="#" id="fiveTab" class="tablinks fiveTab commonTab inActive ">About</a>
+            <a href="#" id="sixTab" class="tablinks sixTab commonTab inActive" >Contact</a>
       </div>
     </div>
     <div class="col-lg-10 w-75">
         <div class="mb-2">
         <span class="slideBaar">
-            <a class="openIconSide"  href="#" onclick="openSlideMenu()">
+            <a class="openIconSideProfile" href="#" onclick="openSlideMenuProfile()">
             <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
         </span>
@@ -224,8 +148,17 @@ if($_GET){
 </body>
 </html> 
 
-
 <script>
+
+function openSlideMenuProfile(){
+  document.getElementById('menuProfile').style.width = '120px';
+  document.getElementById('navSlideProfileContent').style.marginLeft = '0px';
+}
+function closeSideMenuProfile(){
+  document.getElementById('menuProfile').style.width = '0px';
+  document.getElementById('navSlideProfileContent').style.marginLeft = '0px';
+}
+  
 
 //side tab script start
 $(document).ready(function () {

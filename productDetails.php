@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +11,43 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+
+ <!-- Basic stylesheet  -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.default.css">
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script> 
+
+<style>
+   /* product details owl css start */
+#owl-demo .item{
+  /* background: #42bdc2; */
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+  /* product details owl css end */
+</style>
+
 </head>
 <body>
 <section id="services" class="services section-bg">
-   <div class="container-fluid">
-      <div class="row row-sm">
-         <div class="col-md-6 _boxzoom">
+   
+   <div class="container title_bx text-center mb-5">
+            <h3 class="title">Product Details</h3>
+         </div>
+      </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 _boxzoom d-flex flex-row">
             <div class="zoom-thumb">
                <ul class="piclist">
                   <li><img src="https://s.fotorama.io/1.jpg" alt=""></li>
@@ -39,7 +71,7 @@
                      <span class="price"> Rs. 699 </span>
                   </div>
                   <div class="_p-add-cart">
-                     <div class="_p-qty">
+                     <div class="d-flex flex-row align-items-center">
                         <span>Add Quantity</span>
                         <div class="value-button decrease_" id="" value="Decrease Value">-</div>
                         <input type="number" name="qty" id="number" value="1" />
@@ -63,10 +95,7 @@
                      Technics: Woven
                      Use: Home, Hotel, Hospital, Cafe, Office
                      Feature: Blackout, Insulated, Flame Retardant
-                     Place of Origin: India
-                     Name: Curtain
-                     Usage: Window Decoration
-                     Keywords: Ready Made Blackout Curtain                        
+                     Place of Origin: India                      
                   </div>
                   <form action="" method="post" accept-charset="utf-8">
                      <ul class="spe_ul"></ul>
@@ -90,7 +119,172 @@
       </div>
    </div>
 </section>
-<section class="sec bg-light">
+
+<section class="container text-center">
+<div class="row">
+      <div class="col-sm-12 title_bx">
+            <h3 class="title"> Recent Post </h3>
+         </div>
+      </div>
+<div class="owl-carousel owl-theme">
+<div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="m-2"> 
+      <div class="item">
+             <div class="sq_box shadow">
+             <div class="pdis_img"> 
+               <span class="wishlist">
+                  <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                  </span>
+                <a href="#">
+                   <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                 </a>
+             </div>
+             <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+             <div class="price-box mb-2">
+                <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+             </div>
+            <div class="btn-box text-center">
+                <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+            </div>
+         </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<!-- <section class="sec bg-light">
    <div class="container">
       <div class="row">
          <div class="col-sm-12 title_bx">
@@ -244,7 +438,15 @@
          </div>
       </div>
    </div>
-</section>
+</section> -->
+
+<script>
+  $(document).ready(function() {
+ 
+ $(".owl-carousel").owlCarousel();
+
+});
+</script>
 
 <script src="js/product.js"></script>
 

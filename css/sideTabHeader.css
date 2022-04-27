@@ -1,0 +1,41 @@
+.navSlide{
+    height: 100%;
+    width:0;
+    position: relative;
+    z-index: 999;
+    top: -2%;
+    left: 0;
+    background-color: #28aae0;
+    opacity: .9;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    padding-top: 35px;
+  }
+
+  .navSlide a{ 
+    display:block;
+    text-align:center;
+    font-size: 15px;
+    padding:-50px;
+    text-decoration: none;
+    color: #ccc;
+  }
+  .navSlide a:hover{
+    transition: 0.4s;
+    color: #fff;
+  }
+
+  .navSlide .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#000;
+  }
+
+  .openIconSide{
+    color: #000;
+    font-size: 36px;
+    /* margin-left:130px; */
+  }

@@ -19,10 +19,7 @@ $id=intval($userIdArray["id"]);
 }
 ?>
 <!DOCTYPE html>
-
-
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,12 +35,18 @@ $id=intval($userIdArray["id"]);
     <!-- OwlCarousel 2 theme css cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
 
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  
         <!-- Link Swiper's CSS -->
-        <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-
-    
+    <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
  
     <link rel="stylesheet" href="./css/header.css">
     <!-- <link rel="stylesheet" href="./css/order.css"> -->
@@ -53,84 +56,9 @@ $id=intval($userIdArray["id"]);
     <link rel="stylesheet" href="../js/banner_Slider.js">
     <link rel="stylesheet" href="./css/product_slider.css">
     <link rel="stylesheet" href="./css/product_page.css">
-       
-    <style>
-  .navSlide{
-    height: 100%;
-    width:0;
-    position: relative;
-    z-index: 999;
-    top: -2%;
-    left: 0;
-    background-color: #28aae0;
-    opacity: .9;
-    overflow-x: hidden;
-    /* overflow-y: scroll; */
-    padding-top: 35px;
-  }
-
-  .navSlide a{ 
-    display:block;
-    text-align:center;
-    font-size: 15px;
-    padding:-50px;
-    text-decoration: none;
-    color: #ccc;
-  }
-  .navSlide a:hover{
-    transition: 0.4s;
-    color: #fff;
-  }
-
-  .navSlide .close{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    margin-left: 50px;
-    font-size: 30px;
-    color:#000;
-  }
-
-  .openIconSide{
-    color: #000;
-    font-size: 36px;
-    /* margin-left:130px; */
-  }
-
-  /* #NavSlideContent{
-    padding: 20px;
-    transition: margin-left 0.7s;
-    overflow: hidden;
-    display:flex;
-    flex-direction:row;
-  } */
-
-  /* @media screen and (max-width:768px) {
-    .navSlide{
-    width: 120px;
-    margin-left: -57px;
-    text-align: left;
-    padding-left: 10px;
-  }    
-  } */
-  
-</style>
-
-<script>
-
-  function openSlideMenu(){
-    document.getElementById('menu').style.width = '150px';
-    document.getElementById('NavSlideContent').style.marginLeft = '0px';
-  }
-  function closeSideMenu(){
-    document.getElementById('menu').style.width = '0px';
-    document.getElementById('NavSlideContent').style.marginLeft = '0px';
-  }
-
-</script>
-    
-
-
+	<link rel="stylesheet" type="text/css" href="./css/product.css">
+    <link rel="stylesheet" href="./css/userProfileSideTab.css">
+    <link rel="stylesheet" href="./css/sideTabHeader.css">
 </head>
 
 <body>
@@ -397,62 +325,63 @@ $id=intval($userIdArray["id"]);
                             <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
                             </div>
 
                             <div class="list-item first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
                             </div>
 
                              <div class="list-item  first-list-item">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
                             </div>
                             <div class="list-item first-list-item">
                                 <h3 class="title">categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
                             </div>
                             <div class="list-item first-list-item">
                                 <h3 class="title">categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
                             </div>
                             <div class="list-item first-list-item" id="list-item-margin">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
 
                             </div>
@@ -460,10 +389,11 @@ $id=intval($userIdArray["id"]);
                             <div class="list-item first-list-item" id="list-item-margin">
                                 <h3 class="title"> categry </h3>
                                 <ul>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
-                                    <li><a href="#">submenu</a></li>
+                                <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
+                                    <li><a href="productSub.php">submenu</a></li>
                                 </ul>
 
                             </div>
@@ -509,16 +439,16 @@ $id=intval($userIdArray["id"]);
                     <li> <a href="#">Kids</a> </li>
                     <li> <a href="#">sports wear</a></li> -->
 
-                    <li><a href="#">grocery</a></li>
+                    <li><a href="productSub.php">grocery</a></li>
 
-                    <li> <a href="#">books</a></li>
+                    <li> <a href="productSub.php">books</a></li>
 
-                    <li><a href="#">electronics</a></li>
-                    <li><a href="#">household</a></li>
-                    <li><a href="#">decoration</a></li>
-                    <li><a href="#">furniture</a></li>
-                    <li><a href="#">stationary</a></li>
-                    <li><a href="#">devotion</a></li>
+                    <li><a href="productSub.php">electronics</a></li>
+                    <li><a href="productSub.php">household</a></li>
+                    <li><a href="productSub.php">decoration</a></li>
+                    <li><a href="productSub.php">furniture</a></li>
+                    <li><a href="productSub.php">stationary</a></li>
+                    <li><a href="productSub.php">devotion</a></li>
 
                         </div>
                     </li>
@@ -531,6 +461,21 @@ $id=intval($userIdArray["id"]);
         </div>
     </header>
 
+ <!-- sideTab    -->
+<script>
+
+function openSlideMenu(){
+  document.getElementById('menu').style.width = '150px';
+  document.getElementById('NavSlideContent').style.marginLeft = '0px';
+}
+function closeSideMenu(){
+  document.getElementById('menu').style.width = '0px';
+  document.getElementById('NavSlideContent').style.marginLeft = '0px';
+}
+
+// sideTab
+
+</script>
 
     <script src="../js/banner_slider.js"></script>
     <script type="text/javascript" src="../js/fashion.js"></script>
