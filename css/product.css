@@ -22,14 +22,27 @@
 }
 .picZoomer-zoom-wp{
 	display: none;
-	position: absolute;
+	position: fixed;
 	z-index: 999;
 	overflow: hidden;
     border:1px solid #eee;
     height: 460px;
-    margin-top: 0px;
-    margin-left: 70px;
+    margin-top: 10%;
+    margin-left:20%;
 }
+
+/* @media screen and (min-width: 480px) and (max-width:768px){
+    .picZoomer-zoom-wp{
+    display: none;
+	position: fixed;
+	z-index: 999;
+	overflow: hidden;
+    border:1px solid #eee;
+    height: 460px;
+    margin-top:100%;
+    margin-left:0%;
+    }  
+} */
 .picZoomer-cursor{
 	display: none;
 	cursor: crosshair;
@@ -124,9 +137,7 @@ section {
 /*======products-details=====*/
 ._product-detail-content {
     background: #fff;
-    padding: 15px;
     border: 1px solid lightgray;
-    height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
 }

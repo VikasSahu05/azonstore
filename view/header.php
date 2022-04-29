@@ -22,7 +22,7 @@ $id=intval($userIdArray["id"]);
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>azone store</title>
 
     <!-- Font Awesome -->
@@ -30,35 +30,41 @@ $id=intval($userIdArray["id"]);
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
      <!-- OwlCarousel 2 css cdn link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> -->
     <!-- OwlCarousel 2 theme css cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/> -->
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script> -->
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
-
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>   -->
         <!-- Link Swiper's CSS -->
-    <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
  
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sideTabHeader.css">
     <!-- <link rel="stylesheet" href="./css/order.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fashion_page.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+
+    <!--between this section css is not avilable -->
+   
+    <!-- <link rel="stylesheet" href="./css/fashion_page.css">
     <link rel="stylesheet" href="../js/banner_Slider.js">
     <link rel="stylesheet" href="./css/product_slider.css">
-    <link rel="stylesheet" href="./css/product_page.css">
-	<link rel="stylesheet" type="text/css" href="./css/product.css">
-    <link rel="stylesheet" href="./css/userProfileSideTab.css">
-    <link rel="stylesheet" href="./css/sideTabHeader.css">
+    <link rel="stylesheet" href="./css/product_page.css"> -->
+
+    <!-- this css is not avilable -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="./css/product.css"> -->
+    <!-- <link rel="stylesheet" href="./css/userProfileSideTab.css"> -->
 </head>
 <body>
     
@@ -476,9 +482,9 @@ function closeSideMenu(){
 
 </script>
 
-    <script src="../js/banner_slider.js"></script>
-    <script type="text/javascript" src="../js/fashion.js"></script>
-    <script type="text/javascript" src="../js/cities.js"></script>
+    <script src="./js/banner_slider.js"></script>
+    <script type="text/javascript" src="./js/fashion.js"></script>
+    <script type="text/javascript" src="./js/cities.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
     <script>
