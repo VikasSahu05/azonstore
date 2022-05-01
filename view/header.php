@@ -48,7 +48,7 @@ $id=intval($userIdArray["id"]);
         <!-- Link Swiper's CSS -->
     <!-- <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
  
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="./css/sideTabHeader.css">
     <!-- <link rel="stylesheet" href="./css/order.css"> -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
