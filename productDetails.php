@@ -1,47 +1,5 @@
+<?php include("view/header1.php");?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Product details</title>
-	<!-- Bootstrap link -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-   
-   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-   
-	<link rel="stylesheet" type="text/css" href="css/product.css">
-   
-   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
-
- <!-- Basic stylesheet  -->
-<link rel="stylesheet" href="css/owl.carousel.css">
- 
-<!-- Default Theme -->
-<link rel="stylesheet" href="css/owl.theme.default.css">
- 
-<!-- Include js plugin -->
-<script src="js/owl.carousel.js"></script> 
-
-<style>
-   /* product details owl css start */
-#owl-demo .item{
-  /* background: #42bdc2; */
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
-}
-
-  /* product details owl css end */
-</style>
-
-</head>
-<body>
 <section id="services" class="services section-bg">
    
    <div class="container title_bx text-center mb-5">

@@ -1,6 +1,6 @@
 <!-- <link rel="stylesheet" href="css/sidebar.css"> -->
 <?php 
-include("view/header.php");
+include("view/header1.php");
 if($_GET){
     intval($_GET["id"]);
     $id=$conn -> real_escape_string($_GET["id"]);
@@ -11,7 +11,6 @@ if($_GET){
     
 }
 ?>
-
 <body>
 
 <div class="container">

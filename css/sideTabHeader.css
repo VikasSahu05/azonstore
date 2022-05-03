@@ -1,22 +1,22 @@
 .navSlide{
-    height: 100%;
+    /* height: 100%; */
     width:0;
-    position: relative;
+    position: absolute;
     z-index: 999;
-    top: -2%;
+    top: 70%;
     left: 0;
     background-color: #28aae0;
     opacity: .9;
     overflow-x: hidden;
     /* overflow-y: scroll; */
-    padding-top: 35px;
+    /* padding-top: 35px; */
   }
 
   .navSlide a{ 
     display:block;
     text-align:center;
     font-size: 15px;
-    padding:-50px;
+    padding:10px;
     text-decoration: none;
     color: #ccc;
   }
@@ -26,10 +26,10 @@
   }
 
   .navSlide .close{
-    position: absolute;
+    position: relative;
     top: 0;
     right: 10px;
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 30px;
     color:#000;
   }

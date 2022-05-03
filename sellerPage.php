@@ -1,5 +1,5 @@
 <?php
- include("view/header.php");
+ include("view/header1.php");
  include("view/connection.php");
 ?>
 <div class="container">
