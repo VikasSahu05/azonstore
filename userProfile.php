@@ -150,12 +150,12 @@ if($_GET){
 <script>
 
 function openSlideMenuProfile(){
-  document.getElementById('menuProfile').style.width = '120px';
+  document.getElementById('menuProfile').style.width = '100px';
   document.getElementById('navSlideProfileContent').style.marginLeft = '0px';
 }
 function closeSideMenuProfile(){
   document.getElementById('menuProfile').style.width = '0px';
-  document.getElementById('navSlideProfileContent').style.marginLeft = '0px';
+  document.getElementById('navSlideProfileContent').style.marginLeft = '5px';
 }
   
 

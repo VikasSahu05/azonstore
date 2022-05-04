@@ -2,14 +2,15 @@
     height: 100%;
     width: 0;
     position: relative;
-    /* z-index: 1; */
+    z-index: 1;
     top: 0%;
     left: 0;
     background-color: #28aae0;
-    /* opacity: .9; */
-    overflow-x: hidden;
+    opacity: .9;
+    overflow-y: hidden;
     padding-top: 50px;
   }
+  
 
   .navSlideProfile a{
     display: block;
@@ -48,10 +49,71 @@
 
   @media screen and (max-width:768px) {
     .navSlideProfile{
+    width: 90px;
+    margin-left: -20px;
+    text-align: left;
+    /* padding-left: 10px; */
+  }    
+  }
+
+/* /////////////////////// */
+/* main menu */
+  .navSlide{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 20%;
+    left: 0;
+    background-color: #28aae0;
+    opacity: .9;
+    overflow-y: scroll;
+    padding-top: 50px;
+  }
+  
+
+  .navSlide a{
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ccc;
+  }
+  .navSlideProfile a:hover{
+    transition: 0.4s;
+    color: #fff;
+  }
+
+  .navSlide .closeTab{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#000;
+  }
+
+  .openIconSide{
+    color: #000;
+    font-size: 36px;
+    /* margin-left:130px; */
+  }
+
+  #navSlideContent{
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    /* display:flex;
+    flex-direction:row; */
+  }
+
+  @media screen and (max-width:768px) {
+    .navSlide{
     width: 120px;
     margin-left: -57px;
     text-align: left;
     padding-left: 10px;
   }    
   }
+  
   
